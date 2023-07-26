@@ -1,0 +1,174 @@
+:root {
+    --gris: #464646;
+    --background-light: #f5f5f5;
+    --blue: #253D5B;
+    --blue-light: #e2e9f3;
+}
+
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--background-light);
+    font-family: 'Raleway', sans-serif;
+    color: var(--gris);
+}
+
+ul,
+li {
+    list-style: none;
+    /* display: inline; */
+}
+
+a {
+    text-decoration: none;
+    color: var(--gris)
+}
+
+.container {
+    display: flex;
+    width: 1440px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin: 0 auto;
+}
+
+.redes-banner,
+.text-banner,
+.header,
+.logo-nav {
+    color: var(--gris);
+}
+
+
+/* --------------------------------- Header --------------------------------- */
+.header {
+    display: flex;
+    width: 1136px;
+    padding: 32px 0px;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.logo-nav a {
+    margin-left: 8px;
+}
+
+.icon {
+    color: var(--blue);
+}
+
+.nav-header ul li,
+.redes-banner li {
+    display: inline;
+    vertical-align: middle;
+}
+
+.nav-header ul li {
+    margin: auto 10px;
+}
+
+/* --------------------------------- Banner --------------------------------- */
+.banner {
+    display: flex;
+    width: 1136px;
+    justify-content: space-between;
+    align-items: center;
+    font-style: normal;
+    line-height: normal;
+}
+
+.text-banner {
+    display: flex;
+    width: 751px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex-shrink: 0;
+}
+
+.text-banner h1 {
+    color: var(--blue);
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.text-banner p {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.img-banner img {
+    width: 350px;
+    height: 350px;
+    border-radius: 350px;
+}
+
+.redes-banner {
+    display: flex;
+    width: 751px;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.redes-banner img {
+    vertical-align: middle;
+    width: 20px;
+}
+
+
+/* ---------------------------- About - Sobre mi ---------------------------- */
+.about {
+    display: flex;
+    padding: 64px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    /* background-color: #f1f4f9 */
+    background-color: #e2e9f3;
+}
+
+.text-about {
+    display: flex;
+    width: 1136px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+h2 {
+    color: var(--blue);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.text-about p {
+    font-size: 16px;
+    font-weight: 400;
+    width: 751px;
+    text-align: justify;
+}
+
+.text-about img {
+    width: 140px;
+    height: 52px;
+}
+
