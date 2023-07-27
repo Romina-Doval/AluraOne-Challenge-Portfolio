@@ -2,10 +2,11 @@
     --gris: #464646;
     --background-light: #f5f5f5;
     --blue: #253D5B;
-    --blue-light: #e2e9f3;
+    --background-blue-light: #e9edf1;
+    --light: #f9f9f9;
 }
 
-*, 
+*,
 *:after,
 *:before {
     margin: 0;
@@ -48,7 +49,7 @@ a {
 }
 
 
-/* --------------------------------- Header --------------------------------- */
+/* --------------------------------- HEADER --------------------------------- */
 .header {
     display: flex;
     width: 1136px;
@@ -85,7 +86,7 @@ a {
     margin: auto 10px;
 }
 
-/* --------------------------------- Banner --------------------------------- */
+/* --------------------------------- BANNER --------------------------------- */
 .banner {
     display: flex;
     width: 1136px;
@@ -119,6 +120,7 @@ a {
     width: 350px;
     height: 350px;
     border-radius: 350px;
+    background-color: var(--blue);
 }
 
 .redes-banner {
@@ -133,8 +135,7 @@ a {
     width: 20px;
 }
 
-
-/* ---------------------------- About - Sobre mi ---------------------------- */
+/* ---------------------------------- ABOUT --------------------------------- */
 .about {
     display: flex;
     padding: 64px;
@@ -142,8 +143,7 @@ a {
     align-items: center;
     gap: 10px;
     align-self: stretch;
-    /* background-color: #f1f4f9 */
-    background-color: #e2e9f3;
+    background-color: var(--background-blue-light);
 }
 
 .text-about {
@@ -170,5 +170,246 @@ h2 {
 .text-about img {
     width: 140px;
     height: 52px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   SKILLS                                   */
+/* -------------------------------------------------------------------------- */
+.skills,
+.hobbies {
+    display: flex;
+    width: 1136px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 88px;
+    gap: 32px;
+}
+
+.skills {
+    gap: 32px;
+}
+
+.container-cards {
+    display: flex;
+    gap: 16px;
+}
+
+
+.card-1,
+.card-2 {
+    display: flex;
+    width: 176px;
+    height: 174px;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border: 1px solid var(--blue);
+    border-radius: 15px;
+
+}
+
+.card-1 p,
+.card-2 p {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 8px;
+    font-style: normal;
+    line-height: normal;
+    color: var(--gris);
+}
+
+.card-1 svg {
+    color: var(--blue);
+}
+
+/* --------------------------------- HOBBIES -------------------------------- */
+.card-2 img {
+    width: 48px;
+}
+
+/* -------------------------------- ACADEMIC -------------------------------- */
+.academic {
+    display: flex;
+    padding: 82px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+    background-color: var(--background-blue-light);
+    width: 1440px;
+}
+
+.container-cards2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+
+}
+
+.card-academic {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+h3 {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sub-t {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.img-academic {
+    display: flex;
+    width: 368px;
+    height: 286px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--background-light);
+}
+
+.img-academic img {
+    width: 190px;
+    height: 130px;
+    flex-shrink: 0;
+}
+
+/* -------------------------------- PROYECTS -------------------------------- */
+.proyects {
+    display: flex;
+    width: 1440px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.container-proyects {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+    /* border: 2px solid var(--blue); */
+}
+
+.card-proyect {
+    display: flex;
+    width: 1136px;
+    height: 406px;
+    align-items: center;
+    gap: 16px;
+}
+
+.card-proyect img {
+    width: 700px;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+.right-proyects {
+    width: 368px;
+    gap: 8px;
+}
+
+.buttons-proyects {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 15px;
+}
+
+.buttons-proyects button {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 12px;
+    border-radius: 5px;
+    width: 116px;
+}
+
+.outline {
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    background-color: var(--light);
+}
+
+.active {
+    color: var(--light);
+    background-color: var(--blue);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   CONTACT                                  */
+/* -------------------------------------------------------------------------- */
+.contact {
+    display: flex;
+    width: 1440px;
+    padding: 64px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--background-blue-light);
+}
+
+.container-contact {
+    display: flex;
+    width: 1136px;
+    padding-top: 64px;
+    align-items: center;
+    gap: 16px;
+    background-color: var(--background-light);
+}
+
+.container-contact img {
+    width: 464px;
+    height: 593px;
+    flex-shrink: 0;
+    /* background-color: #253D5B; */
+    padding: 50px;
+}
+
+.right-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    flex: 1 0 0;
+}
+
+.right-contact p {
+    margin-top: 8px !important;
+}
+
+/* --------------------------------- FOOTER --------------------------------- */
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    padding: 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.fa-regular, .fa-brands {
+    color: var(--blue);
+    margin: 0 5px;
 }
 
