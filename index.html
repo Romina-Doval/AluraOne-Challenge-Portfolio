@@ -20,16 +20,16 @@
         <!-- ------------------------------- HEADER -------------------------------- -->
         <section class="header">
             <div class="logo-nav">
-                <img class="icon" src="./assets/estrellas.png" alt="stars"><a href="#">Romina Doval</a>
+                <img class="icon" src="./assets/estrellas.png" alt="stars"><a href="./index.html">Romina Doval</a>
             </div>
             <nav class="nav-header">
                 <ul>
-                    <li><a href="#">Sobre mi</li></a>
-                    <li><a href="#">Skills</li></a>
-                    <li><a href="#">Hobbies</li></a>
-                    <li><a href="#">Formación</li></a>
-                    <li><a href="#">Proyectos</li></a>
-                    <li><a href="#"><img class="icon" src="./assets/correo-electronico.png" alt="Contacto"></li></a>
+                    <li class="hidden"><a href="#about">Sobre mi</li></a>
+                    <li class="hidden"><a href="#skills">Skills</li></a>
+                    <li class="hidden"><a href="#hobbies">Hobbies</li></a>
+                    <li class="hidden"><a href="#academic">Formación</li></a>
+                    <li class="hidden"><a href="#projects">Proyectos</li></a>
+                    <li><a href="#contact" id="mail-header">romina.doval@gmail.com</li></a>
                 </ul>
             </nav>
         </section>
@@ -37,8 +37,8 @@
         <!-- ------------------------------- BANNER -------------------------------- -->
         <section class="banner">
             <div class="text-banner">
-                <h1>Hola, mi nombre es Romina Doval y construyo páginas web</h1>
-                <p>Soy formada en tecnologías clave del desarrollo web, incluyendo HTML, CSS y JavaScript. Actualmente
+                <h1>Hola, mi nombre es <span>Romina Doval</span> y diseño páginas web.</h1>
+                <p>Soy formada en tecnologías como HTML, CSS y JavaScript. Actualmente
                     estoy participando del proyecto Oracle ONE en Alura Latam.</p>
                 <ul class="redes-banner">
                     <li><a href="https://github.com/Romina-Doval" target="_blank">Github<img src="./assets/arrow.png"
@@ -47,7 +47,7 @@
                                 src="./assets/arrow.png" alt="Github"></li></a>
                     <li><a href="https://www.instagram.com/romy.doval/" target="_blank">Instagram<img
                                 src="./assets/arrow.png" alt="Github"></li></a>
-                    <li><a href="#">CV<img src="./assets/arrow.png" alt="Github"></li></a>
+                    <li><a href="/assets/Romina-CV.pdf" download="CV Romina Doval">CV<img src="./assets/arrow.png" alt="Github"></li></a>
                 </ul>
             </div>
 
@@ -57,8 +57,10 @@
 
         </section>
 
+        <span id="about"></span>
+
         <!-- -------------------------------- ABOUT -------------------------------- -->
-        <section class="about">
+        <section class="about" >
             <div class="text-about">
                 <h2>Sobre mi...</h2>
                 <p>
@@ -80,6 +82,8 @@
                 <img src="./assets/signature.png" alt="firma">
             </div>
         </section>
+
+        <span id="skills"></span>
 
         <!-- ------------------------------- SKILLS -------------------------------- -->
         <section class="skills">
@@ -118,8 +122,10 @@
             </div>
         </section>
 
+        <span id="hobbies"></span>
+
         <!-- ------------------------------- HOBBIES ------------------------------- -->
-        <section class="hobbies">
+        <section class="hobbies" id="hobbies">
             <h2>Hobbies</h2>
             <div class="container-cards">
                 <div class="card-2">
@@ -141,87 +147,130 @@
             </div>
         </section>
 
+        <span id="academic"></span>
+
         <!-- ------------------------- FORMACIÓN ACADÉMICA ------------------------- -->
         <section class="academic">
             <h2>Formación Académica</h2>
             <div class="container-cards2">
                 <div class="card-academic">
                     <div class="img-academic">
-                        <img src="./assets/alura-logo.png" alt="Alura">
+                        <img src="./assets/codo-a-codo.png" alt="Codo a Codo 4.0">
                     </div>
-                    <h3>Formación</h3>
-                    <p class="sub-t">2019 - Alura</p>
+                    <h3>Full Stack - Desarrollo Web (JavaScript/Node.JS)</h3>
+                    <p class="sub-t">2022 - Codo a Codo 4.0</p>
                 </div>
 
                 <div class="card-academic">
                     <div class="img-academic">
-                        <img src="./assets/alura-logo.png" alt="Alura">
+                        <img src="./assets/alura.png" alt="Alura Latam">
                     </div>
-                    <h3>Formación</h3>
-                    <p class="sub-t">2019 - Alura</p>
+                    <h3>Especialización Front-end</h3>
+                    <p class="sub-t">2023 -One + Alura Latam</p>
                 </div>
 
                 <div class="card-academic">
                     <div class="img-academic">
-                        <img src="./assets/alura-logo.png" alt="Alura">
+                        <img src="./assets/MindHub.png" alt="MindHub">
                     </div>
-                    <h3>Formación</h3>
-                    <p class="sub-t">2019 - Alura</p>
+                    <h3>Bootcamp Web Front-end</h3>
+                    <p class="sub-t">2023 - Argentina Programa 4.0 + MindHub</p>
                 </div>
             </div>
 
 
         </section>
 
+        <span id="projects"></span>
 
         <!-- ----------------- PROYECTOS - EXPERIENCIA PROFESIONAL ----------------- -->
-        <section class="proyects">
+        <section class="projects">
             <h2>Experiencia Profesional</h2>
-            <div class="container-proyects">
-                <div class="card-proyect">
+            <div class="container-projects">
+                <div class="card-project">
                     <img src="./assets/encriptador.png" alt="Encriptador">
-                    <div class="right-proyects">
+                    <div class="right-projects">
                         <h3>Encriptador de Texto</h3>
                         <p class="sub-t">Challenge Oracle</p>
-                        <div class="buttons-proyects">
-                            <button class="outline">Repositorio</button>
-                            <button class="active">Ver Demo</button>
+                        <div class="buttons-projects">
+                            <a class="outline" href="https://github.com/Romina-Doval/Encriptador" target="_blank">Repositorio</a>
+                            <a class="active" href="https://romina-doval.github.io/Encriptador/" target="_blank">Ver Demo</a>
                         </div>
                     </div>
                 </div>
 
+                <div class="card-project2">
+                    <img src="./assets/proyectoMindHub.png" alt="Encriptador">
+                    <div class="right-projects">
+                        <h3>Amazing Events</h3>
+                        <p class="sub-t">Proyecto MindHub</p>
+                        <div class="buttons-projects">
+                            <a class="outline" href="https://github.com/Romina-Doval/amazing-events-Doval" target="_blank">Repositorio</a>
+                            <a class="active" href="https://romina-doval.github.io/amazing-events-Doval/" target="_blank">Ver Demo</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
             </div>
         </section>
+
+        <span id="contact"></span>
 
         <!-- ------------------------------ CONTACTO ------------------------------- -->
         <section class="contact">
             <div class="container-contact">
-                <img src="./assets/contact.svg" alt="Contacto">
+                <img src="./assets/contact.jpg" alt="Contacto">
                 <div class="right-contact">
-                    <div>
+                    <div class="title-form">
                         <h2>Contacto</h2>
-                        <p>¿Quieres contactarme?
-                        Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+                        <p>¿Quieres contactarme?</p>
+                        <p>el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
                     </div>
-                    <div class="form">
 
+                    <form class="form-contact" name="form">
+                        <div class="input-container">             
+                            <input name="name" id="name" class="input" type="text" placeholder="Nombre" required data-type="nombre">
+                            <label class="input-label" for="name">Nombre</label>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                                    
+                        <div class="input-container">
+                            <input name="email" id="email" class="input" type="email" placeholder="E-mail" required data-type="email">
+                            <label class="input-label" for="email">E-mail</label>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
 
-                    </div>
-                    
-
+                        <div class="input-container">
+                            <input name="asunto" id="text" class="input" type="text" placeholder="Asunto" required data-type="asunto">
+                            <label class="input-label" for="asunto">Asunto</label>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                        
+                        <div class="textarea-container">
+                            <textarea class="textarea" rows="5" cols="70" id="mensaje" name="mensaje" placeholder="Mensaje" required data-type="mensaje"></textarea>
+                            <label class="textarea-label" for="textarea">Mensaje</label>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                        
+                        <button type="submit" class="submit">Enviar</button>
+                    </form>
                 </div>
             </div>
         </section>
 
         <!-- ------------------------------- FOOTER -------------------------------- -->
         <footer>
-            <p>Desarrollado por Romina Doval<i class="fa-regular fa-star-half-stroke"></i><span>2023</span></p>
+            <p>Desarrollado por Romina Doval <i class="fa-regular fa-star-half-stroke"></i><span> 2023</span></p>
             <div class="redes-footer">
-                <a href="https://github.com/Romina-Doval" target="_blank"><i class="fa-brands fa-square-github fa-xl"></i></a>
-                <a href="https://www.linkedin.com/in/romina-doval/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-                <a href="https://www.instagram.com/romy.doval/" target="_blank"><i class="fa-brands fa-square-instagram fa-xl"></i></a>
+                <a href="https://github.com/Romina-Doval" target="_blank"><i
+                        class="fa-brands fa-square-github fa-xl"></i></a>
+                <a href="https://www.linkedin.com/in/romina-doval/" target="_blank"><i
+                        class="fa-brands fa-linkedin fa-xl"></i></a>
+                <a href="https://www.instagram.com/romy.doval/" target="_blank"><i
+                        class="fa-brands fa-square-instagram fa-xl"></i></a>
             </div>
-            
         </footer>
 
 
