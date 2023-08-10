@@ -7,7 +7,6 @@
     --red: #d91313;
 }
 
-
 /* ------------------------------ GLOBAL RESET ------------------------------ */
 *,
 *:after,
@@ -56,9 +55,8 @@ textarea {
     color: var(--gray);
 }
 
-
 /* --------------------------------- HEADER --------------------------------- */
-.header {
+header {
     display: flex;
     width: 1136px;
     padding: 32px 0px;
@@ -76,6 +74,9 @@ textarea {
     font-weight: 700;
 }
 
+.logo-nav:hover {
+    transform: scale(1.1);
+}
 
 .nav-header ul li,
 .redes-banner li {
@@ -101,7 +102,6 @@ textarea {
 #mail-header {
     font-weight: bold;
 }
-
 
 /* --------------------------------- BANNER --------------------------------- */
 .banner {
@@ -178,7 +178,6 @@ textarea {
     transform: scale(1.2);
 }
 
-
 /* ---------------------------------- ABOUT --------------------------------- */
 .about {
     display: flex;
@@ -217,7 +216,6 @@ h2 {
     width: 140px;
     height: 52px;
 }
-
 
 /* --------------------------------- SKILLS --------------------------------- */
 .skills,
@@ -265,9 +263,55 @@ h2 {
     color: var(--blue);
 }
 
+.card-1:hover,
+.card-2:hover {
+    animation: shadow-drop-center 0.4s linear both;
+    border: 2px solid var(--blue);
+}
+
+@keyframes shadow-drop-center {
+    0% {
+        box-shadow: 0 0 0 0 transparent;
+    }
+
+    100% {
+        box-shadow: 0 0 20px -3px var(--blue);
+    }
+}
+
 /* --------------------------------- HOBBIES -------------------------------- */
 .card-2 img {
     width: 48px;
+}
+
+.card-2:hover img {
+    animation: vibrate 1.5s linear both;
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translate(0)
+    }
+
+    20% {
+        transform: translate(-2px, 2px)
+    }
+
+    40% {
+        transform: translate(-2px, -2px)
+    }
+
+    60% {
+        transform: translate(2px, 2px)
+    }
+
+    80% {
+        transform: translate(2px, -2px)
+    }
+
+    100% {
+        transform: translate(0)
+    }
 }
 
 /* -------------------------------- ACADEMIC -------------------------------- */
@@ -585,7 +629,6 @@ h3 {
     top: 16px;
 }
 
-
 .textarea:not(:placeholder-shown)+.textarea-label,
 .textarea:focus+.textarea-label {
     font-size: 12px;
@@ -615,7 +658,6 @@ h3 {
     padding-left: 0.5rem;
 }
 
-
 .form-contact button {
     display: flex;
     padding: 16px;
@@ -637,7 +679,6 @@ h3 {
     color: var(--blue);
     font-weight: 700;
 }
-
 
 /* --------------------------------- FOOTER --------------------------------- */
 footer {
@@ -681,18 +722,17 @@ footer {
     }
 
     .academic,
-    .header,
+    header,
     .banner,
     .about,
     .skills,
-    .hobbies
-    .projects,
+    .hobbies .projects,
     .contact,
     footer {
         width: 768px;
     }
 
-    .header {
+    header {
         padding: 16px 32px;
     }
 
@@ -704,7 +744,8 @@ footer {
         padding: 32px;
     }
 
-    .about, .contact {
+    .about,
+    .contact {
         gap: 10px;
         padding: 32px;
     }
@@ -796,7 +837,7 @@ footer {
     .sub-t {
         font-size: 0.8rem;
     }
-    
+
     .container-projects {
         width: 704px;
         align-items: center;
@@ -837,22 +878,27 @@ footer {
     .right-contact {
         width: 704px;
     }
-    .form-contact, .input-container, .textarea-container, .container-contact, .input {
-        width: 100%;
-     }
 
-    
+    .form-contact,
+    .input-container,
+    .textarea-container,
+    .container-contact,
+    .input {
+        width: 100%;
+    }
+
+
 }
+
 /* -------------------------------------------------------------------------- */
 @media (max-width: 425px) {
 
     .academic,
-    .header,
+    header,
     .banner,
     .about,
     .skill,
-    .hobbies
-    .projects,
+    .hobbies .projects,
     .contact,
     footer {
         width: 425px;
@@ -863,9 +909,12 @@ footer {
         padding: 16px;
     }
 
-    .header {
+    header {
         font-size: 0.7rem;
         padding: 16px;
+        position: sticky;
+        top: 0%;
+        background-color: var(--background-light);
     }
 
     .banner {
@@ -914,6 +963,10 @@ footer {
 
     h2 {
         font-size: 1.2rem;
+        background: linear-gradient(to top, var(--red) 0%, var(--blue) 70%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .text-about p {
@@ -955,6 +1008,10 @@ footer {
         width: 1.5rem !important;
     }
 
+    .card-2:hover img {
+        animation: none;
+    }
+
     .academic {
         gap: 32px;
         padding: 32px;
@@ -985,7 +1042,8 @@ footer {
         width: 360px;
     }
 
-    .card-project, .card-project2 {
+    .card-project,
+    .card-project2 {
         width: 296px;
         height: 251px;
     }
@@ -1034,11 +1092,4 @@ footer {
         width: 280px;
     }
 
-    h2 {
-        background: var(--blue);
-        background: linear-gradient(to top, var(--red) 0%, var(--blue) 70%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
 }

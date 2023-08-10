@@ -18,21 +18,21 @@
     <div class="container">
 
         <!-- ------------------------------- HEADER -------------------------------- -->
-        <section class="header">
+        <header>
             <div class="logo-nav">
                 <img class="icon" src="./assets/estrellas.png" alt="stars"><a href="./index.html">Romina Doval</a>
             </div>
             <nav class="nav-header">
                 <ul>
-                    <li class="hidden"><a href="#about">Sobre mi</li></a>
-                    <li class="hidden"><a href="#skills">Skills</li></a>
-                    <li class="hidden"><a href="#hobbies">Hobbies</li></a>
-                    <li class="hidden"><a href="#academic">Formación</li></a>
-                    <li class="hidden"><a href="#projects">Proyectos</li></a>
-                    <li><a href="#contact" id="mail-header">romina.doval@gmail.com</li></a>
+                    <li class="hidden"><a href="#about">Sobre mi</a></li>
+                    <li class="hidden"><a href="#skills">Skills</a></li>
+                    <li class="hidden"><a href="#hobbies">Hobbies</a></li>
+                    <li class="hidden"><a href="#academic">Formación</a></li>
+                    <li class="hidden"><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact" id="mail-header">romina.doval@gmail.com</a></li>
                 </ul>
             </nav>
-        </section>
+        </header>
 
         <!-- ------------------------------- BANNER -------------------------------- -->
         <section class="banner">
@@ -42,12 +42,13 @@
                     estoy participando del proyecto Oracle ONE en Alura Latam.</p>
                 <ul class="redes-banner">
                     <li><a href="https://github.com/Romina-Doval" target="_blank">Github<img src="./assets/arrow.png"
-                                alt="Github"></li></a>
+                                alt="Github"></a></li>
                     <li><a href="https://www.linkedin.com/in/romina-doval/" target="_blank">Linkedin<img
-                                src="./assets/arrow.png" alt="Github"></li></a>
+                                src="./assets/arrow.png" alt="Github"></a></li>
                     <li><a href="https://www.instagram.com/romy.doval/" target="_blank">Instagram<img
-                                src="./assets/arrow.png" alt="Github"></li></a>
-                    <li><a href="/assets/Romina-CV.pdf" download="CV Romina Doval">CV<img src="./assets/arrow.png" alt="Github"></li></a>
+                                src="./assets/arrow.png" alt="Github"></a></li>
+                    <li><a href="/assets/Romina-CV.pdf" download="CV Romina Doval">CV<img src="./assets/arrow.png"
+                                alt="Github"></a></li>
                 </ul>
             </div>
 
@@ -60,7 +61,7 @@
         <span id="about"></span>
 
         <!-- -------------------------------- ABOUT -------------------------------- -->
-        <section class="about" >
+        <section class="about">
             <div class="text-about">
                 <h2>Sobre mi...</h2>
                 <p>
@@ -125,7 +126,7 @@
         <span id="hobbies"></span>
 
         <!-- ------------------------------- HOBBIES ------------------------------- -->
-        <section class="hobbies" id="hobbies">
+        <section class="hobbies">
             <h2>Hobbies</h2>
             <div class="container-cards">
                 <div class="card-2">
@@ -193,8 +194,10 @@
                         <h3>Encriptador de Texto</h3>
                         <p class="sub-t">Challenge Oracle</p>
                         <div class="buttons-projects">
-                            <a class="outline" href="https://github.com/Romina-Doval/Encriptador" target="_blank">Repositorio</a>
-                            <a class="active" href="https://romina-doval.github.io/Encriptador/" target="_blank">Ver Demo</a>
+                            <a class="outline" href="https://github.com/Romina-Doval/Encriptador"
+                                target="_blank">Repositorio</a>
+                            <a class="active" href="https://romina-doval.github.io/Encriptador/" target="_blank">Ver
+                                Demo</a>
                         </div>
                     </div>
                 </div>
@@ -205,11 +208,13 @@
                         <h3>Amazing Events</h3>
                         <p class="sub-t">Proyecto MindHub</p>
                         <div class="buttons-projects">
-                            <a class="outline" href="https://github.com/Romina-Doval/amazing-events-Doval" target="_blank">Repositorio</a>
-                            <a class="active" href="https://romina-doval.github.io/amazing-events-Doval/" target="_blank">Ver Demo</a>
+                            <a class="outline" href="https://github.com/Romina-Doval/amazing-events-Doval"
+                                target="_blank">Repositorio</a>
+                            <a class="active" href="https://romina-doval.github.io/amazing-events-Doval/"
+                                target="_blank">Ver Demo</a>
                         </div>
                     </div>
-                    
+
                 </div>
 
 
@@ -230,30 +235,34 @@
                     </div>
 
                     <form class="form-contact" name="form">
-                        <div class="input-container">             
-                            <input name="name" id="name" class="input" type="text" placeholder="Nombre" required data-type="nombre">
+                        <div class="input-container">
+                            <input name="name" id="name" class="input" type="text" placeholder="Nombre" required
+                                data-type="nombre">
                             <label class="input-label" for="name">Nombre</label>
                             <span class="input-message-error">Este campo no es valido</span>
                         </div>
-                                    
+
                         <div class="input-container">
-                            <input name="email" id="email" class="input" type="email" placeholder="E-mail" required data-type="email">
+                            <input name="email" id="email" class="input" type="email" placeholder="E-mail" required
+                                data-type="email">
                             <label class="input-label" for="email">E-mail</label>
                             <span class="input-message-error">Este campo no es valido</span>
                         </div>
 
                         <div class="input-container">
-                            <input name="asunto" id="text" class="input" type="text" placeholder="Asunto" required data-type="asunto">
+                            <input name="asunto" id="asunto" class="input" type="text" placeholder="Asunto" required
+                                data-type="asunto">
                             <label class="input-label" for="asunto">Asunto</label>
                             <span class="input-message-error">Este campo no es valido</span>
                         </div>
-                        
+
                         <div class="textarea-container">
-                            <textarea class="textarea" rows="5" cols="70" id="mensaje" name="mensaje" placeholder="Mensaje" required data-type="mensaje"></textarea>
+                            <textarea class="textarea" rows="5" cols="70" id="textarea" name="mensaje"
+                                placeholder="Mensaje" required data-type="mensaje"></textarea>
                             <label class="textarea-label" for="textarea">Mensaje</label>
                             <span class="input-message-error">Este campo no es valido</span>
                         </div>
-                        
+
                         <button type="submit" class="submit">Enviar</button>
                     </form>
                 </div>
@@ -262,7 +271,7 @@
 
         <!-- ------------------------------- FOOTER -------------------------------- -->
         <footer>
-            <p>Desarrollado por Romina Doval <i class="fa-regular fa-star-half-stroke"></i><span> 2023</span></p>
+            <p>Desarrollado por Romina Doval <i class="fa-solid fa-star-half-stroke"></i><span> 2023</span></p>
             <div class="redes-footer">
                 <a href="https://github.com/Romina-Doval" target="_blank"><i
                         class="fa-brands fa-square-github fa-xl"></i></a>
@@ -272,9 +281,6 @@
                         class="fa-brands fa-square-instagram fa-xl"></i></a>
             </div>
         </footer>
-
-
-
     </div>
 
     <script src="./validacion.js"></script>
